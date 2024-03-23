@@ -4,9 +4,29 @@ import java.util.Scanner;
 
 public class Dueño {
 	private Vehiculo vehiculo;
+	private Double plata;
+	private int dni;
 	
-	public Dueño(Vehiculo vehiculo) {
+	public Dueño(Vehiculo vehiculo, Double plata, int dni) {
 		this.vehiculo = vehiculo;
+		this.plata=plata;
+		this.dni=dni;
+	}
+
+	public int getDni() {
+		return dni;
+	}
+
+	public void setDni(int dni) {
+		this.dni = dni;
+	}
+
+	public Double getPlata() {
+		return plata;
+	}
+
+	public void setPlata(Double plata) {
+		this.plata = plata;
 	}
 
 	public Vehiculo getVehiculo() {

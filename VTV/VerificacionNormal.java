@@ -6,6 +6,7 @@ public class VerificacionNormal extends Verificacion {
 
     public VerificacionNormal(Vehiculo vehiculo) {
         super(vehiculo);
+        setCosto(1000.0);
     }
 
     @Override

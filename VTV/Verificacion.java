@@ -5,12 +5,21 @@ import java.time.LocalDate;
 public abstract class Verificacion {
 	private LocalDate fechaDeVerificacion,expiracion;
 	private Vehiculo vehiculo;
+	private Double costo;
 
 	public Verificacion(Vehiculo vehiculo) {
 		this.vehiculo = vehiculo;
 		realizarVerificacion();
 	}
 	
+	public Double getCosto() {
+		return costo;
+	}
+
+	public void setCosto(Double costo) {
+		this.costo = costo;
+	}
+
 	public LocalDate getFechaDeVerificacion() {
 		return fechaDeVerificacion;
 	}

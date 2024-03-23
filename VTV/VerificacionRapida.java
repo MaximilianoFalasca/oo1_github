@@ -6,7 +6,7 @@ public class VerificacionRapida extends Verificacion {
 
 	public VerificacionRapida(Vehiculo vehiculo) {
 		super(vehiculo);
-		// TODO Auto-generated constructor stub
+		setCosto(200.0);
 	}
 
 	@Override
